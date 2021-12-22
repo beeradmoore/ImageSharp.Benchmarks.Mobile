@@ -1,0 +1,109 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.3.1" />
+    <PackageReference Include="SkiaSharp" Version="2.80.3" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+    <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="SixLabors.ImageSharp" />
+    <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="SkiaSharp" />
+    <None Remove="Benchmarks\" />
+    <None Remove="BenchmarkDotNet" />
+    <None Remove="BenchmarkDotNet.Annotations" />
+    <None Remove="Images\" />
+    <None Remove="Images\ActualOutput\" />
+    <None Remove="Images\ActualOutput\MemoryStress\" />
+    <None Remove="Images\Input\MemoryStress\ancyloscelis-apiformis-m-paraguay-face_2014-08-08-095255-zs-pmax_15046500892_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\acanthopus-excellens-f-face-brasil_2014-08-06-132105-zs-pmax_14792513890_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\10x-nomada-eye_2015-04-13-174116-zs-pmax_16519118423_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-coloradinus-f-face-shannon-co-s-dakota_2014-01-09-143148-zs-pmax_12229924934_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-melliventris-f-face-shannon-co-s-dakota_2014-01-10-150004-zs-pmax_12251067186_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-sericeus-f-face-md-pg-county_2014-01-31-162208-zs-pmax_12422042734_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-sericeus-m-face-pr-georges-co-maryland_2014-01-20-132536-zs-pmax_14742601602_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-splendens-f-faceside-anne-arundel-md_2014-07-09-132922-zs-pmax_14432920557_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-splendens-f-head-anne-arundel-county-md_2014-07-09-133757-zs-pmax_14432919367_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-splendens-face_2012-06-25-141609-zs-pmax_7515013120_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-virescens-f-face-kings-county-new-york_2013-02-01-150102-zs-pmax_8443486820_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\agapostemon-virescens-m-face-mesa-co-colorado_2014-01-08-144652-zs-pmax_11898964714_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-accepta-female-face_2012-08-02-17_7900072162_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-aliciae-male-face_2012-08-07-1725_7982757269_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-alleghaniensis-u-face_2013-01-04-140446-zs-pmax_8351878070_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-anograe-female-face_2012-08-06-154148-zs-pmax_7983390306_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-arabis-m-face-ny-orange-co_2013-06-07-174958-zs-pmax_14740879654_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-asteroides-f-face-md-charles-co_2013-08-19-150830-zs-pmax_9958686066_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-asteroides-u-face-pg-county-md_2013-07-12-145751-zs-pmax_10329930503_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-banksi-female-face_2012-08-06-163254-zs-pmax_7840604328_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-barbara-female-face_2012-08-06-170550-zs-pmax_8000347281_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-barbilabris-u-face-md-howard-county_2013-08-16-174834-zs-pmax_10329403185_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-brevipalpis-m-face-caroline-county_2015-10-27-101153-zs-pmax-udr_22651138850_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-commoda-female-face_2012-08-02-180600-zs-pmax_8194019534_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-cornelli-f-face-va-gales-county_2014-01-24-182858-zs-pmax_13043067883_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-cragini-f-face-pennington-co-sd_2013-12-11-111622-zs-pmax_11513277264_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-cressoni-f-face-va-westmoreland-co_2014-04-03-110144-zs-pmax_13895716623_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-cuneilabrisfface-humboldt-coca_2013-12-12-152229-zs-pmax_11785854163_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-fragilis-female-face_2012-06-11-153630-zs-pmax_7177995481_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-fulvipennis-m-face-md-anne-arundel-county_2013-08-16-182543-zs-pmax_10329629993_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-gardineri-m-face-oh-washington-county_2014-05-06-130840-zs-pmax_14191185851_o.jpg" />
+    <None Remove="Images\Input\MemoryStress\andrena-helianthi-u-face-connecticut-new-haven-county_2012-12-14-140936-zs-pmax_8297611555_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Benchmarks\" />
+    <Folder Include="Images\" />
+    <Folder Include="Images\Input\" />
+    <Folder Include="Images\Input\MemoryStress\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Input\MemoryStress\ancyloscelis-apiformis-m-paraguay-face_2014-08-08-095255-zs-pmax_15046500892_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\acanthopus-excellens-f-face-brasil_2014-08-06-132105-zs-pmax_14792513890_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\10x-nomada-eye_2015-04-13-174116-zs-pmax_16519118423_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-coloradinus-f-face-shannon-co-s-dakota_2014-01-09-143148-zs-pmax_12229924934_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-melliventris-f-face-shannon-co-s-dakota_2014-01-10-150004-zs-pmax_12251067186_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-sericeus-f-face-md-pg-county_2014-01-31-162208-zs-pmax_12422042734_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-sericeus-m-face-pr-georges-co-maryland_2014-01-20-132536-zs-pmax_14742601602_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-splendens-f-faceside-anne-arundel-md_2014-07-09-132922-zs-pmax_14432920557_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-splendens-f-head-anne-arundel-county-md_2014-07-09-133757-zs-pmax_14432919367_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-splendens-face_2012-06-25-141609-zs-pmax_7515013120_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-virescens-f-face-kings-county-new-york_2013-02-01-150102-zs-pmax_8443486820_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\agapostemon-virescens-m-face-mesa-co-colorado_2014-01-08-144652-zs-pmax_11898964714_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-accepta-female-face_2012-08-02-17_7900072162_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-aliciae-male-face_2012-08-07-1725_7982757269_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-alleghaniensis-u-face_2013-01-04-140446-zs-pmax_8351878070_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-anograe-female-face_2012-08-06-154148-zs-pmax_7983390306_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-arabis-m-face-ny-orange-co_2013-06-07-174958-zs-pmax_14740879654_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-asteroides-f-face-md-charles-co_2013-08-19-150830-zs-pmax_9958686066_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-asteroides-u-face-pg-county-md_2013-07-12-145751-zs-pmax_10329930503_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-banksi-female-face_2012-08-06-163254-zs-pmax_7840604328_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-barbara-female-face_2012-08-06-170550-zs-pmax_8000347281_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-barbilabris-u-face-md-howard-county_2013-08-16-174834-zs-pmax_10329403185_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-brevipalpis-m-face-caroline-county_2015-10-27-101153-zs-pmax-udr_22651138850_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-commoda-female-face_2012-08-02-180600-zs-pmax_8194019534_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-cornelli-f-face-va-gales-county_2014-01-24-182858-zs-pmax_13043067883_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-cragini-f-face-pennington-co-sd_2013-12-11-111622-zs-pmax_11513277264_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-cressoni-f-face-va-westmoreland-co_2014-04-03-110144-zs-pmax_13895716623_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-cuneilabrisfface-humboldt-coca_2013-12-12-152229-zs-pmax_11785854163_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-fragilis-female-face_2012-06-11-153630-zs-pmax_7177995481_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-fulvipennis-m-face-md-anne-arundel-county_2013-08-16-182543-zs-pmax_10329629993_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-gardineri-m-face-oh-washington-county_2014-05-06-130840-zs-pmax_14191185851_o.jpg" />
+    <EmbeddedResource Include="Images\Input\MemoryStress\andrena-helianthi-u-face-connecticut-new-haven-county_2012-12-14-140936-zs-pmax_8297611555_o.jpg" />
+  </ItemGroup>
+</Project>
