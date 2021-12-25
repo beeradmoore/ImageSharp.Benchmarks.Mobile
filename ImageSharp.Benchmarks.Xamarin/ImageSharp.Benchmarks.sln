@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks.Android", "ImageSharp.Benchmarks.Android\ImageSharp.Benchmarks.Android.csproj", "{8DA353E4-1D24-4D45-96F9-8D79EC4E0A23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks.Xamarin.Android", "ImageSharp.Benchmarks.Xamarin.Android\ImageSharp.Benchmarks.Xamarin.Android.csproj", "{8DA353E4-1D24-4D45-96F9-8D79EC4E0A23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks.iOS", "ImageSharp.Benchmarks.iOS\ImageSharp.Benchmarks.iOS.csproj", "{C48CF739-196D-4521-9290-673AA644FB13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks.Xamarin.iOS", "ImageSharp.Benchmarks.Xamarin.iOS\ImageSharp.Benchmarks.Xamarin.iOS.csproj", "{C48CF739-196D-4521-9290-673AA644FB13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks", "ImageSharp.Benchmarks\ImageSharp.Benchmarks.csproj", "{9F991DBB-0F69-467F-838D-C35BB9228343}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSharp.Benchmarks.Xamarin", "ImageSharp.Benchmarks.Xamarin\ImageSharp.Benchmarks.Xamarin.csproj", "{9F991DBB-0F69-467F-838D-C35BB9228343}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace ImageSharp.Benchmarks.iOS
+namespace ImageSharp.Benchmarks.Xamarin.iOS
 {
     public class Application
     {

@@ -12,7 +12,7 @@ using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
-namespace ImageSharp.Benchmarks
+namespace ImageSharp.Benchmarks.Xamarin
 {
     public partial class TestPage : ContentPage
     {

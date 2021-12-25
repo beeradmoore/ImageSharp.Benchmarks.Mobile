@@ -2,7 +2,7 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ImageSharp.Benchmarks.TestPage">
+    x:Class="ImageSharp.Benchmarks.Xamarin.TestPage">
 
     <Grid RowDefinitions="Auto,*" Padding="8">
         <Button Grid.Row="0" Grid.Column="0" Text="Run" Command="{Binding RunCommand}" />

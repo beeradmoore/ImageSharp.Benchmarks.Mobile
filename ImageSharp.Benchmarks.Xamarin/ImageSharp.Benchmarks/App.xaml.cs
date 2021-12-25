@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ImageSharp.Benchmarks
+namespace ImageSharp.Benchmarks.Xamarin
 {
     public partial class App : Application
     {

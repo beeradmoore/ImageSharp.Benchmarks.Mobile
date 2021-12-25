@@ -16,12 +16,12 @@ using BenchmarkDotNet.Loggers;
 using BenchmarkDotNet.Order;
 using BenchmarkDotNet.Running;
 using BenchmarkDotNet.Validators;
-using ImageSharp.Benchmarks.Benchmarks;
+using ImageSharp.Benchmarks.Xamarin.Benchmarks;
 using Xamarin.CommunityToolkit.ObjectModel;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
-namespace ImageSharp.Benchmarks
+namespace ImageSharp.Benchmarks.Xamarin
 {
     public partial class MainPage : ContentPage
     {

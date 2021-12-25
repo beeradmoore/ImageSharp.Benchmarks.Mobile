@@ -2,7 +2,7 @@
 using System.Threading;
 using BenchmarkDotNet.Attributes;
 
-namespace ImageSharp.Benchmarks.Benchmarks
+namespace ImageSharp.Benchmarks.Xamarin.Benchmarks
 {
     public class IntroBasic
     {

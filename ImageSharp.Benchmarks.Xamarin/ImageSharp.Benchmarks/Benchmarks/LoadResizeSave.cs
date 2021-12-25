@@ -14,7 +14,7 @@ using SkiaSharp;
 using ImageSharpImage = SixLabors.ImageSharp.Image;
 using ImageSharpSize = SixLabors.ImageSharp.Size;
 
-namespace ImageSharp.Benchmarks.Benchmarks
+namespace ImageSharp.Benchmarks.Xamarin.Benchmarks
 {
     [MemoryDiagnoser]
     [ShortRunJob]
