@@ -5,12 +5,12 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
-using System.Threading;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Processing;
 using SkiaSharp;
+using Xamarin.Essentials;
 using ImageSharpImage = SixLabors.ImageSharp.Image;
 using ImageSharpSize = SixLabors.ImageSharp.Size;
 
@@ -147,7 +147,7 @@ namespace ImageSharp.Benchmarks.Xamarin.Benchmarks
 
         string CreateOutputDirectory(string path, params string[] pathParts)
         {
-            path = Path.Combine(Xamarin.Essentials.FileSystem.CacheDirectory, "Images", "ActualOutput", path);
+            path = Path.Combine(FileSystem.CacheDirectory, "Images", "ActualOutput", path);
 
             if (pathParts != null && pathParts.Length > 0)
             {
