@@ -27,7 +27,19 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+
+		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+		<PackageReference Include="SkiaSharp" Version="2.88.0-preview.179" />
+		<PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+		<PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.1" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-pre3" />
+		
+	</ItemGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
@@ -47,6 +59,7 @@
 		<!-- Required - WinUI does not yet have buildTransitive for everything -->
 		<PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.0" />
 		<PackageReference Include="Microsoft.Graphics.Win2D" Version="1.0.0.30" />
+
 	</ItemGroup>
 
 	<PropertyGroup Condition="$(TargetFramework.Contains('-windows'))">
@@ -54,6 +67,7 @@
 		<RuntimeIdentifier>win10-x64</RuntimeIdentifier>
 	</PropertyGroup>
 
+	
 	<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) AND $(__DeployToDevice)">
         <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
     </PropertyGroup>
@@ -61,6 +75,7 @@
 	<PropertyGroup Condition="$(TargetFramework.Contains('-android')) AND $(__DeployToDevice)">
         <RuntimeIdentifier>android-arm64</RuntimeIdentifier>
     </PropertyGroup>
+	
 	
 
 </Project>
